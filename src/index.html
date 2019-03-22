@@ -10,7 +10,7 @@
     <header>
       <h2>Currency Converter</h2>
     </header>
-    <form>
+    <form class="controls">
       <div class="field"> 
         <div class="field-label"> 
           <label>Base</label>
@@ -25,11 +25,11 @@
       <div class="field">
         <div class="field-label">
           <label for ="sum" >Sum</label>
+		  </div>
         <div class="field-input">
           <input type="number" id="sum" name="sum" value="1" step="0.01" min="0.01" />
         </div>
         <div id="currency-indicator">&euro;</div>
-        </div>
       </div>
       <div class="field">
         <input type="submit" value="Convert" />
@@ -37,8 +37,8 @@
     </form>
     <div id="isLoading"  >Loading...</div>
     <ul id="currency-list">
-      <li>item1</l>
-      <li>item2</li> 
+      <li><div>EUR</div><div>1000</div></li>
+      <li><div>USD</div><div>1000</div></li>
     </ul>
     <script type="text/javascript" src="/bundle.js"></script>
   </body>
